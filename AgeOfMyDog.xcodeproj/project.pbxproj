@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E503398326029A4A0086ECDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503398226029A4A0086ECDC /* AppDelegate.swift */; };
 		E503398526029A4A0086ECDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503398426029A4A0086ECDC /* SceneDelegate.swift */; };
-		E503398726029A4A0086ECDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503398626029A4A0086ECDC /* ViewController.swift */; };
+		E503398726029A4A0086ECDC /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503398626029A4A0086ECDC /* ConverterViewController.swift */; };
 		E503398A26029A4A0086ECDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E503398826029A4A0086ECDC /* Main.storyboard */; };
 		E503398C26029A4C0086ECDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E503398B26029A4C0086ECDC /* Assets.xcassets */; };
 		E503398F26029A4C0086ECDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E503398D26029A4C0086ECDC /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		E503397F26029A4A0086ECDC /* AgeOfMyDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeOfMyDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503398226029A4A0086ECDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E503398426029A4A0086ECDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E503398626029A4A0086ECDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E503398626029A4A0086ECDC /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		E503398926029A4A0086ECDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E503398B26029A4C0086ECDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E503398E26029A4C0086ECDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		E503398126029A4A0086ECDC /* AgeOfMyDog */ = {
 			isa = PBXGroup;
 			children = (
-				E503398226029A4A0086ECDC /* AppDelegate.swift */,
-				E503398426029A4A0086ECDC /* SceneDelegate.swift */,
-				E503398626029A4A0086ECDC /* ViewController.swift */,
-				E503398826029A4A0086ECDC /* Main.storyboard */,
-				E503398B26029A4C0086ECDC /* Assets.xcassets */,
-				E503398D26029A4C0086ECDC /* LaunchScreen.storyboard */,
-				E503399026029A4C0086ECDC /* Info.plist */,
+				E59BDD30263D69F600B88B95 /* ViewController */,
+				E59BDD32263D6A2C00B88B95 /* Storyboards */,
+				E59BDD2E263D69DC00B88B95 /* Supporting files */,
+				E59BDD33263D6A3300B88B95 /* Sources */,
 			);
 			path = AgeOfMyDog;
+			sourceTree = "<group>";
+		};
+		E59BDD2E263D69DC00B88B95 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E503398226029A4A0086ECDC /* AppDelegate.swift */,
+				E503398426029A4A0086ECDC /* SceneDelegate.swift */,
+				E503399026029A4C0086ECDC /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E59BDD30263D69F600B88B95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E503398626029A4A0086ECDC /* ConverterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E59BDD32263D6A2C00B88B95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E503398826029A4A0086ECDC /* Main.storyboard */,
+				E503398D26029A4C0086ECDC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E59BDD33263D6A3300B88B95 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E503398B26029A4C0086ECDC /* Assets.xcassets */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E503398726029A4A0086ECDC /* ViewController.swift in Sources */,
+				E503398726029A4A0086ECDC /* ConverterViewController.swift in Sources */,
 				E503398326029A4A0086ECDC /* AppDelegate.swift in Sources */,
 				E503398526029A4A0086ECDC /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4HK5Y82J4;
-				INFOPLIST_FILE = AgeOfMyDog/Info.plist;
+				INFOPLIST_FILE = "AgeOfMyDog/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikkochet.AgeOfMyDog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4HK5Y82J4;
-				INFOPLIST_FILE = AgeOfMyDog/Info.plist;
+				INFOPLIST_FILE = "AgeOfMyDog/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikkochet.AgeOfMyDog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

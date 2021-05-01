@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2bX-XM-FRj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter View Controller-->
+        <scene sceneID="x9e-sN-qej">
+            <objects>
+                <viewController id="2bX-XM-FRj" customClass="ConverterViewController" customModule="AgeOfMyDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Nk-Uq-WqB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ElE-ag-IG1">
+                                <rect key="frame" x="16" y="305.5" width="382" height="285"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAA-JE-tKz">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="87"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.58282423019999996" green="0.43760794400000003" blue="0.29016456010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="HKN-OK-OCk">
+                                        <rect key="frame" x="-2" y="99" width="386" height="88"/>
+                                        <color key="minimumTrackTintColor" red="0.72574843739999995" green="0.91850975059999995" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="maximumTrackTintColor" red="1" green="0.84993043660000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="ageSliderChanged:" destination="2bX-XM-FRj" eventType="valueChanged" id="5Ln-73-HpK"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98k-oF-L4n">
+                                        <rect key="frame" x="0.0" y="198" width="382" height="87"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.12955081460000001" green="0.82620507480000005" blue="0.12903344629999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dogs_White_background_Jack_Russell_terrier_Glasses_511998_1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="yKC-rn-cfV">
+                                <rect key="frame" x="16" y="618" width="382" height="244"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-sM-Peo">
+                                <rect key="frame" x="16" y="60" width="382" height="211"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="211" id="31s-fg-QOy"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZI3-Dx-Yqt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZI3-Dx-Yqt" firstAttribute="trailing" secondItem="ElE-ag-IG1" secondAttribute="trailing" constant="16" id="1Bl-uC-rhl"/>
+                            <constraint firstItem="ElE-ag-IG1" firstAttribute="leading" secondItem="ZI3-Dx-Yqt" secondAttribute="leading" constant="16" id="2N1-cj-Rop"/>
+                            <constraint firstItem="ff9-sM-Peo" firstAttribute="top" secondItem="ZI3-Dx-Yqt" secondAttribute="top" constant="16" id="K9V-Mm-Mt1"/>
+                            <constraint firstItem="yKC-rn-cfV" firstAttribute="top" secondItem="ElE-ag-IG1" secondAttribute="bottom" constant="27.5" id="KUx-cF-eFH"/>
+                            <constraint firstItem="yKC-rn-cfV" firstAttribute="leading" secondItem="ZI3-Dx-Yqt" secondAttribute="leading" constant="16" id="QIq-M0-PzQ"/>
+                            <constraint firstItem="ff9-sM-Peo" firstAttribute="leading" secondItem="ZI3-Dx-Yqt" secondAttribute="leading" constant="16" id="UgY-Lf-c4F"/>
+                            <constraint firstItem="ZI3-Dx-Yqt" firstAttribute="trailing" secondItem="yKC-rn-cfV" secondAttribute="trailing" constant="16" id="hh9-ku-pnj"/>
+                            <constraint firstItem="ElE-ag-IG1" firstAttribute="top" secondItem="ff9-sM-Peo" secondAttribute="bottom" constant="34.5" id="nST-AG-zmi"/>
+                            <constraint firstItem="ZI3-Dx-Yqt" firstAttribute="trailing" secondItem="ff9-sM-Peo" secondAttribute="trailing" constant="16" id="qhv-cB-SdS"/>
+                            <constraint firstItem="ZI3-Dx-Yqt" firstAttribute="bottom" secondItem="yKC-rn-cfV" secondAttribute="bottom" id="sSW-iq-nKh"/>
+                            <constraint firstItem="ElE-ag-IG1" firstAttribute="centerY" secondItem="3Nk-Uq-WqB" secondAttribute="centerY" id="u1Z-N1-WbZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageSlider" destination="HKN-OK-OCk" id="vaN-to-YPL"/>
+                        <outlet property="dogAgeLabel" destination="DAA-JE-tKz" id="Ifs-6D-4ai"/>
+                        <outlet property="humanAgeLabel" destination="98k-oF-L4n" id="L3E-3h-BVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoh-Ov-3am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026.4000000000001" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dog" width="1920" height="1200"/>
+        <image name="Dogs_White_background_Jack_Russell_terrier_Glasses_511998_1024x1024" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
