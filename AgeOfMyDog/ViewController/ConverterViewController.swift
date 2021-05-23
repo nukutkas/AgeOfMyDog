@@ -25,21 +25,15 @@ class ConverterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        dogAgeLabel.text = "Моей собаке полных лет \(ageOfMyDog):"
-//        humanAgeLabel.text  = "Человеческих лет ей \(humanAgeOfMyDog)"
+        
         ageSliderChanged(ageSlider)
-       
-      
     }
+    
     @IBAction func ageSliderChanged(_ sender: UISlider) {
         ageOfMyDog = Int(round(sender.value))
         dogAgeLabel.text = "Моей собаке полных лет: \(ageOfMyDog)"
         humanAgeOfMyDog = Int((16 * log(Double(ageOfMyDog)) + 31))
         humanAgeLabel.text = "Человеческих лет ей: \(humanAgeOfMyDog)"
-        
-        
     }
-    
-
 }
 
